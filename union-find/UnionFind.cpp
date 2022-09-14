@@ -1,3 +1,13 @@
+/*
+ * Created By: Rahul M <roboto7o32oo3@gmail.com>
+ *
+ * UnionFind provides near constant-time operations to add new sets, to merge existing sets and to check whether elements are in the same set.
+ * Mainly used for checking for connected components in graphs.
+ *
+ * Time Complexity: O(alpha(n)), where alpha(n) is the inverse Ackermann function. Since it is a very slowly growing function, the time complexity can be regareded as constant
+ *  
+ */
+
 class UnionFind {
 
 public:
@@ -17,9 +27,11 @@ public:
     
     // finds the parent of given node u
     int Find(int u) {
+		// if the node is the parent of itself, then it is the root of the set 
         if(u == parent[u]){
             return u;
         }
+		// else, find the parent while also compressing the paths
         return u = Find(parent[u]);
     }
     
@@ -31,6 +43,7 @@ public:
         
         // if u and v does not belong to the same set
         if(u != v){
+			// if tree has lower rank
             if(rank[u] < rank[v]){
                 swap(u, v);
             }
@@ -38,6 +51,7 @@ public:
             // attach lower rank tree to higher rank tree
             parent[v] = u;
             
+			// if the ranks become equal, then increase the rank
             if(rank[u] == rank[v]){
                 rank[u]++;
             }
