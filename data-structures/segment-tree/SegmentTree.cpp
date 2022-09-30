@@ -6,14 +6,14 @@
  * This code is written for solving Range Sum Query problem, but can be modified easily for other types of segment tree problems. 
  */
 
-class SegmentTree {
+template <typename T = int> class SegmentTree {
     
-    vector<int> st; // segment tree
-    vector<int> arr; // input array
+    vector<T> st; // segment tree
+    vector<T> arr; // input array
     int n; // size of the input array
 	
 	// TODO: MODIFIABLE
-	int invalidValue = 0;
+	T invalidValue = 0;
     
 	int left(int ind) {
 		return 2*ind + 1;
@@ -24,7 +24,7 @@ class SegmentTree {
 	}
 
 	// TODO: MODIFIABLE
-	int operate(int a, int b){
+	T operate(int a, int b){
 		// value at a node will be sum of left and right node in the case of Range Sum Query
 		return a + b;
 	}
@@ -53,7 +53,7 @@ class SegmentTree {
     }
     
     // sum of values between i and j
-    int query(int l, int r, int i, int j, int ind){
+    T query(int l, int r, int i, int j, int ind){
         // if (l, r) lies completely inside (i, j)
         if(l>=i and r<=j){
             return st[ind];
@@ -66,14 +66,14 @@ class SegmentTree {
         int m = (l+r)/2;
 
 		// call the function recursively for left and right child
-		int leftVal = query(l, m, i, j, left(ind));
-		int rightVal = query(m+1, r, i, j, right(ind));
+		T leftVal = query(l, m, i, j, left(ind));
+		T rightVal = query(m+1, r, i, j, right(ind));
 
         return operate(leftVal, rightVal);
     }
     
     // updating the value in segment tree
-    void update(int l, int r, int val, int i, int ind){
+    void update(int l, int r, T val, int i, int ind){
 		// if you reach leaf node
 		if(l == r){
 			// if you reach node with index i
@@ -97,21 +97,21 @@ class SegmentTree {
     }
     
 public:
-    SegmentTree(vector<int>& nums) {
+    SegmentTree(vector<T>& nums) {
         n = nums.size();
         arr = nums;
-        st = vector<int>(4*n);
+        st = vector<T>(4*n);
         
         // build the segment tree
         build(0, n-1, 0);
     }
     
-    void update(int index, int val) {
+    void update(int index, T val) {
         arr[index] = val;
         update(0, n-1, val, index, 0);
     }
     
-    int query(int left, int right) {
+    T query(int left, int right) {
         return query(0, n-1, left, right, 0);
     }
 };
