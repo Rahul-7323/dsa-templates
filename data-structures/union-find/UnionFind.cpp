@@ -11,35 +11,37 @@
 class UnionFind {
 
 public:
-    
-	vector<int> parent;
-    vector<int> rank;
+
+	vector<int> parent, rank, size;
     
     UnionFind(int n){
         parent = vector<int>(n);
         rank = vector<int>(n);
+		size = vector<int>(n);
         
         for(int i=0; i<n; i++){
             parent[i] = i; // parent of each node will be itself initially
             rank[i] = 0; // rank will be 0 for all nodes initially
+			size[i] = 1; // size will be 1 for all nodes initially
         }
     }
     
     // finds the parent of given node u
-    int Find(int u) {
+    int find(int u) {
 		// if the node is the parent of itself, then it is the root of the set 
         if(u == parent[u]){
             return u;
         }
 		// else, find the parent while also compressing the paths
-        return u = Find(parent[u]);
+        return u = find(parent[u]);
     }
     
     // merges two sets into one, u and v belong to the corresponding sets
-    void Union(int u, int v) {
+	// performs union by rank
+    void unionByRank(int u, int v) {
         // find the parents of u and v
-        u = Find(u);
-        v = Find(v);
+        u = find(u);
+        v = find(v);
         
         // if u and v does not belong to the same set
         if(u != v){
@@ -57,4 +59,25 @@ public:
             }
         }
     }
+
+	// perform union by size
+	void unionBySize(int u, int v) {
+		// find the parents of u and v
+		u = find(u);
+		v = find(v);
+
+		// if u and v do not belong to the same set
+		if(u != v) {
+			// if size of u is smaller
+			if(size[u] < size[v]) {
+				swap(u, v);
+			}
+
+			// attach smaller size tree to larger size tree
+			parent[v] = u;
+
+			// the tree u now contains all the elements of v as well
+			size[u] += size[v];
+		}
+	}
 };
