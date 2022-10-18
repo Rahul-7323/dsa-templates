@@ -13,3 +13,8 @@ This repository contains code for data structures and algorithms in C++.
 	* [Aggressive Cows](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/binary-search/aggressiveCows.cpp)
 * Dynamic Programming
 	* [Binary Lifting](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/dynamic-programming/binary-lifting/TreeAncestor.cpp)
+
+### ToDo
+
+ - [  ] Dijkstras Algorithm
+ - [  ]  
