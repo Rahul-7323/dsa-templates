@@ -16,5 +16,11 @@ This repository contains code for data structures and algorithms in C++.
 
 ### ToDo
 
- - [  ] Dijkstras Algorithm
- - [  ]  
+- [ ] Dijkstras Algorithm
+- [ ] String Hashing algorithms like rolling hash, finding hash of any substring, etc
+- [ ] String matching algorithms like KMP, Z algorithm, etc
+- [ ] Fenwick Tree
+- [ ] Sparse Table
+- [ ] Segment Tree with lazy propagation
+- [ ] Aho-Corasick Algorithm, basically kmp on tries
+- [ ] Strongly Connected Components, Kosarajus algorithm and Tarjans algorithm
