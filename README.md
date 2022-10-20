@@ -1,5 +1,5 @@
-# CPP DSA TEMPLATES
-This repository contains code for data structures and algorithms in C++.
+# DSA TEMPLATES
+This repository contains code for various data structures and algorithms.
 
 ## Data Structures
 * [Segment Tree](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/segment-tree/SegmentTree.cpp)
