@@ -10,9 +10,12 @@ This repository contains code for various data structures and algorithms.
 * Sorting
 	* [Merge Sort](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/sorting/merge-sort/mergeSort.cpp)
 * Binary Search
-	* [Aggressive Cows](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/binary-search/aggressiveCows.cpp)
+	* Binary Search Optimization
+		* [Aggressive Cows](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/binary-search/binary-search-optimization/aggressiveCows.cpp)
 * Dynamic Programming
 	* [Binary Lifting](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/dynamic-programming/binary-lifting/TreeAncestor.cpp)
+* String Hashing
+	* [Polynomial Rolling Hash](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/string-hashing/polynomial-rolling-hash/PolyRollingHash.py)
 
 ### ToDo
 
