@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/maximum-and-sum-of-array/
+
 class Solution {
 public:
     int maximumANDSum(vector<int>& nums, int numSlots) {
