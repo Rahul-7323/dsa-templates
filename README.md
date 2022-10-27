@@ -9,23 +9,21 @@ This repository contains code for various data structures and algorithms.
 ## Algorithms
 * Sorting
 	* [Merge Sort](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/sorting/merge-sort/mergeSort.cpp)
-* Binary Search
-	* Binary Search Optimization
-		* [Aggressive Cows](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/binary-search/binary-search-optimization/aggressiveCows.cpp)
 * Dynamic Programming
 	* [Binary Lifting](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/dynamic-programming/binary-lifting/TreeAncestor.cpp)
-	* Bit Masking
-		* [Maximum AND Sum of Array](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/bit-masking/maximum-AND-sum-of-array/maximumANDSum.cpp)
-	* [Unbounded Knapsack](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/unbounded-knapsack/largestNumber.cpp)
 * String Hashing
 	* [Polynomial Rolling Hash](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/string-hashing/polynomial-rolling-hash/PolyRollingHash.py)
-* Sliding Window
-	* [Minimum Sliding Window](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/sliding-window/minimum-sliding-window/minWindow.cpp) 
 
 ## Good Problems
+* Binary Search
+	* Binary Search Optimization
+		* [Aggressive Cows](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/binary-search/binary-search-optimization/aggressiveCows.cpp)
 * Dynamic Programming
-    * Bit Masking
-        * [Find the Shortest Superstring]()
+	* Bit Masking
+		* [Find the Shortest Superstring (TSP Variant)](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/dynamic-programming/bit-masking/find-the-shortest-superstring_tsp-variant/shortestSuperstring.cpp)
+		* [Maximum AND Sum of Array](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/dynamic-programming/bit-masking/maximum-AND-sum-of-array/maximumANDSum.cpp)
+	* Unbounded Knapsack
+		* [Form Largest Integer with Digits That Add up to Target](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/dynamic-programming/unbounded-knapsack/form-largest-integer-with-digits-that-add-up-to-target/largestNumber.cpp)
 
 ### ToDo
 
