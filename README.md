@@ -22,6 +22,11 @@ This repository contains code for various data structures and algorithms.
 * Sliding Window
 	* [Minimum Sliding Window](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/sliding-window/minimum-sliding-window/minWindow.cpp) 
 
+## Good Problems
+* Dynamic Programming
+    * Bit Masking
+        * [Find the Shortest Superstring]()
+
 ### ToDo
 
 - [ ] Dijkstras Algorithm
