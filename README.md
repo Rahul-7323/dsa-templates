@@ -24,6 +24,7 @@ This repository contains code for various data structures and algorithms.
 		* [Maximum AND Sum of Array](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/dynamic-programming/bit-masking/maximum-AND-sum-of-array/maximumANDSum.cpp)
 	* Unbounded Knapsack
 		* [Form Largest Integer with Digits That Add up to Target](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/dynamic-programming/unbounded-knapsack/form-largest-integer-with-digits-that-add-up-to-target/largestNumber.cpp)
+		* [Minimum Cost to Reach Destination in Time](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/dynamic-programming/unbounded-knapsack/minimum-cost-to-reach-destination-in-time/minCost.cpp)
 
 ### ToDo
 
