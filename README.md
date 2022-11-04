@@ -13,6 +13,7 @@ This repository contains code for various data structures and algorithms.
 	* Shortest Path
 		* [Dijkstras Single Source Shortest Path](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/graph/shortest-path/dijkstras-single-source-shortest-path/dijkstras.cpp)
 * Dynamic Programming
+	* [Binomial Coefficient](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/binomial-coefficient/nCr.cpp)
 	* [Binary Lifting](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/dynamic-programming/binary-lifting/TreeAncestor.cpp)
 * String Hashing
 	* [Polynomial Rolling Hash](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/string-hashing/polynomial-rolling-hash/PolyRollingHash.py)
