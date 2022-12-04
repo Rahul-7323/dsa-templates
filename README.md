@@ -10,6 +10,8 @@ This repository contains code for various data structures and algorithms.
 * Sorting
 	* [Merge Sort](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/sorting/merge-sort/mergeSort.cpp)
 * Graph
+	* Bipartite Graph
+		* [Is Bipartite](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/graph/bipartite-graph/is-bipartite/isBipartite.cpp)
 	* Shortest Path
 		* [Dijkstras Single Source Shortest Path](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/graph/shortest-path/dijkstras-single-source-shortest-path/dijkstras.cpp)
 * Dynamic Programming
