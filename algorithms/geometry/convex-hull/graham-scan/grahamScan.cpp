@@ -97,7 +97,7 @@ vector<Point> grahamScan(vector<Point>& points, bool includeCollinear=true) {
     // go through each point
     for(Point& point : points) {
         // while the points make a clockwise turn, keep popping them
-        while(result.size()>1 and not isCounterClockwise(result.back(), result[result.size()-2], point)) {
+        while(result.size()>1 and not isCounterClockwise(result.back(), result[result.size()-2], point, includeCollinear)) {
             result.pop_back();
         }
 
