@@ -19,6 +19,9 @@ This repository contains code for various data structures and algorithms.
 	* [Binary Lifting](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/dynamic-programming/binary-lifting/TreeAncestor.cpp)
 * String Hashing
 	* [Polynomial Rolling Hash](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/string-hashing/polynomial-rolling-hash/PolyRollingHash.py)
+* Geometry
+	* Convex Hull
+		* [Graham Scan](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/geometry/convex-hull/graham-scan/grahamScan.cpp)
 
 ## Good Problems
 * Binary Search
