@@ -25,7 +25,7 @@ This repository contains code for various data structures and algorithms.
 
 ## Good Problems
 * Sliding Window
-    * [Maximum Number of Robots Within Budget](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problem/sliding-window/maximum-number-of-robots-within-budget/maximumRobots.cpp)
+    * [Maximum Number of Robots Within Budget](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/sliding-window/maximum-number-of-robots-within-budget/maximumRobots.cpp)
 * Binary Search
 	* Binary Search Optimization
 		* [Aggressive Cows](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/binary-search/binary-search-optimization/aggressiveCows.cpp)
