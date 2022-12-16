@@ -23,6 +23,8 @@ This repository contains code for various data structures and algorithms.
 * Geometry
 	* Convex Hull
 		* [Graham Scan](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/geometry/convex-hull/graham-scan/grahamScan.cpp)
+* Math
+    * [Kth Permutation Sequence](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/kth-permutation-sequence-of-first-n-natural-numbers/getPermutation.cpp)
 
 ## Good Problems
 * Sliding Window
