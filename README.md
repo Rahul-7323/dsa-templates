@@ -11,6 +11,7 @@ This repository contains code for various data structures and algorithms.
 * Sorting
 	* [Merge Sort](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/sorting/merge-sort/mergeSort.cpp)
 * Graph
+    * [Bridge Edges](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/graph/bridge-edges/bridgeEdges.cpp)
 	* Bipartite Graph
 		* [Is Bipartite](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/graph/bipartite-graph/is-bipartite/isBipartite.cpp)
 	* Shortest Path
