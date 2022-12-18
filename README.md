@@ -27,6 +27,8 @@ This repository contains code for various data structures and algorithms.
 * Math
     * [Binary Exponentiation](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/binary-exponentiation/binpow.cpp)
     * [Kth Permutation Sequence](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/kth-permutation-sequence-of-first-n-natural-numbers/getPermutation.cpp)
+    * Prime Numbers
+        * [Sieve of Eratosthenes](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/prime-numbers/sieve-of-eratosthenes/sieveOfEratosthenes.cpp)
 
 ## Good Problems
 * Sliding Window
