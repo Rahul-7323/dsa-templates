@@ -29,11 +29,9 @@ public:
     // finds the parent of given node u
     int find(int u) {
 		// if the node is the parent of itself, then it is the root of the set 
-        if(u == parent[u]){
-            return u;
-        }
+        if(parent[u] == u) return u;
 		// else, find the parent while also compressing the paths
-        return u = find(parent[u]);
+        return parent[u] = find(parent[u]);
     }
     
     // merges two sets into one, u and v belong to the corresponding sets
