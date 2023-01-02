@@ -6,6 +6,7 @@ This repository contains code for various data structures and algorithms.
 * [Trie](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/trie/Trie.cpp)
 * [XOR Trie](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/xor-trie/XorTrie.cpp)
 * [Union Find](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/union-find/UnionFind.cpp)
+* [Difference Array](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/difference-array/DiffArray.cpp)
 
 ## Algorithms
 * Sorting
@@ -27,6 +28,7 @@ This repository contains code for various data structures and algorithms.
 * Math
     * [Binary Exponentiation](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/binary-exponentiation/binpow.cpp)
     * [Kth Permutation Sequence](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/kth-permutation-sequence-of-first-n-natural-numbers/getPermutation.cpp)
+    * [Next Permutation](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/next-permutation/nextPermutation.cpp)
     * Prime Numbers
         * [Sieve of Eratosthenes](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/prime-numbers/sieve-of-eratosthenes/sieveOfEratosthenes.cpp)
 
