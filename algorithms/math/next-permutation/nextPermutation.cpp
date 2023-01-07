@@ -8,7 +8,7 @@
  * Space Complexity: O(1)
  */
 
-void nextPermutation(vector<int> arr) {
+void nextPermutation(vector<int>& arr) {
     // find the index of the rightmost peak
     int peakInd = 0;
 
