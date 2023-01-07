@@ -36,7 +36,7 @@ public:
 
     // merges two sets into one, u and v belong to the corresponding sets
     // performs union by rank
-    void unionByRank(int u, int v) {
+    bool unionByRank(int u, int v) {
         // find the parents of u and v
         u = find(u);
         v = find(v);
@@ -55,11 +55,15 @@ public:
             if(rank[u] == rank[v]) {
                 rank[u]++;
             }
+
+            return true;
         }
+
+        return false;
     }
 
     // perform union by size
-    void unionBySize(int u, int v) {
+    bool unionBySize(int u, int v) {
         // find the parents of u and v
         u = find(u);
         v = find(v);
@@ -76,6 +80,10 @@ public:
 
             // the tree u now contains all the elements of v as well
             size[u] += size[v];
+
+            return true;
         }
+
+        return false;
     }
 };
