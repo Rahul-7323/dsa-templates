@@ -34,6 +34,9 @@ This repository contains code for various data structures and algorithms.
     * Prime Numbers
         * [Sieve of Eratosthenes](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/prime-numbers/sieve-of-eratosthenes/sieveOfEratosthenes.cpp)
 
+## STL
+* [Indexed Set](https://github.com/Rahul-7323/dsa-templates/blob/main/stl/indexed-set/indexed_set.cpp)
+
 ## Good Problems
 * Sliding Window
     * [Maximum Number of Robots Within Budget](https://github.com/Rahul-7323/dsa-templates/blob/main/good-problems/sliding-window/maximum-number-of-robots-within-budget/maximumRobots.cpp)
