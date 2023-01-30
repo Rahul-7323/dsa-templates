@@ -15,21 +15,15 @@ public:
     vector<int> parent, rank, size;
 
     UnionFind(int n) {
-        parent = vector<int>(n);
-        rank = vector<int>(n);
-        size = vector<int>(n);
-
-        for(int i=0; i<n; i++) {
-            parent[i] = i; // parent of each node will be itself initially
-            rank[i] = 0; // rank will be 0 for all nodes initially
-            size[i] = 1; // size will be 1 for all nodes initially
-        }
+        parent.resize(n, -1);
+        rank.resize(n, 0);
+        size.resize(n, 1);
     }
 
     // finds the parent of given node u
     int find(int u) {
-        // if the node is the parent of itself, then it is the root of the set 
-        if(parent[u] == u) return u;
+        // if the parent of the node is -1, then it is the root of the set 
+        if(parent[u] == -1) return u;
         // else, find the parent while also compressing the paths
         return parent[u] = find(parent[u]);
     }
