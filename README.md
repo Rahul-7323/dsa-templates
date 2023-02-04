@@ -7,6 +7,7 @@ This repository contains code for various data structures and algorithms.
 * [XOR Trie](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/xor-trie/XorTrie.cpp)
 * [Union Find](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/union-find/UnionFind.cpp)
 * [Difference Array](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/difference-array/DiffArray.cpp)
+* [Difference Matrix](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/difference-matrix/DiffMatrix.cpp)
 
 ## Algorithms
 * Sorting
