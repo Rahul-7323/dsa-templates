@@ -22,6 +22,9 @@ This repository contains code for various data structures and algorithms.
 * Dynamic Programming
 	* [Binomial Coefficient](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/binomial-coefficient/nCr.cpp)
 	* [Binary Lifting](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/algorithms/dynamic-programming/binary-lifting/TreeAncestor.cpp)
+    * Longest Increasing Subsequence
+        * [O(n^2) LIS](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/longest-increasing-subsequence/lis_n_squared.cpp)
+        * [O(n*log(n)) LIS](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/longest-increasing-subsequence/lis_n_log_n.cpp)
 * String Hashing
 	* [Polynomial Rolling Hash](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/string-hashing/polynomial-rolling-hash/PolyRollingHash.py)
 * Geometry
