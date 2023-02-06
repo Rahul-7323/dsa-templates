@@ -31,7 +31,7 @@ public:
         diff[x1][y1] += val;
         diff[x1][y2+1] -= val;
         diff[x2+1][y1] -= val;
-        diff[x1+1][y1+1] += val;
+        diff[x2+1][y2+1] += val;
     }
 
     void prepare() {
