@@ -2,7 +2,6 @@
 This repository contains code for various data structures and algorithms.
 
 ## Data Structures
-* [Segment Tree](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/segment-tree/SegmentTree.cpp)
 * Segment Tree
     * [Range Query, Point Update](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/segment-tree/range_query_point_update.cpp)
     * [Range Query, Range Update](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/segment-tree/range_query_range_update.cpp)
