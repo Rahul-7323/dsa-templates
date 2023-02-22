@@ -6,13 +6,15 @@
  * This code is written for solving Range Sum Query problem, but can be modified easily for other types of segment tree problems. 
  */
 
-template <typename T = int> class SegmentTree {
+template <typename T = int> 
+class SegmentTree {
+public:
     
     vector<T> st; // segment tree
     vector<T> arr; // input array
     int n; // size of the input array
 	
-	// TODO: MODIFIABLE
+	// MODIFIABLE
 	T invalidValue = 0;
     
 	int left(int ind) {
@@ -23,13 +25,13 @@ template <typename T = int> class SegmentTree {
 		return 2*ind + 2;
 	}
 
-	// TODO: MODIFIABLE
-	T operate(int a, int b){
+	// MODIFIABLE
+	T operate(T a, T b){
 		// value at a node will be sum of left and right node in the case of Range Sum Query
 		return a + b;
 	}
 
-	// TODO: MODIFIABLE
+	// MODIFIABLE
 	void pull(int ind) {
 		st[ind] = operate(st[left(ind)], st[right(ind)]);
 	}
@@ -74,11 +76,12 @@ template <typename T = int> class SegmentTree {
     
     // updating the value in segment tree
     void update(int l, int r, T val, int i, int ind){
-		// if you reach leaf node
+		// if you reach a leaf node
 		if(l == r){
 			// if you reach node with index i
 			if(l == i){
 				st[ind] = val;
+                arr[l] = val;
 			}
 			return;
 		}
@@ -96,12 +99,20 @@ template <typename T = int> class SegmentTree {
         }
     }
     
-public:
     SegmentTree(vector<T>& nums) {
         n = nums.size();
         arr = nums;
         st = vector<T>(4*n);
         
+        // build the segment tree
+        build(0, n-1, 0);
+    }
+
+    SegmentTree(int n) {
+        this->n = n;
+        arr = vector<T>(n, 0);
+        st = vector<T>(4*n);
+
         // build the segment tree
         build(0, n-1, 0);
     }

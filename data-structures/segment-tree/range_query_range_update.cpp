@@ -19,9 +19,10 @@ class SegmentTree {
 public:
     vector<T> st;
     vector<T> arr;
-    vector<T> pending;
+    vector<T> lazy;
     int n;
 
+    // modifiable
     T invalidValue = 0;
 
     int left(int ind) {
@@ -42,15 +43,20 @@ public:
         st[ind] = operate(st[left(ind)], st[right(ind)]);
     }
 
-    void doPendingUpdates(int ss, int se, int si) {
-        st[si] += pending[si]*(se-ss+1);
+    // modifiable 
+    void push(int ss, int se, int si) {
+        // for range sum query
+        st[si] += lazy[si]*(se-ss+1);
+
+        // for range max/min query
+        // st[si] += lazy[si];
 
         if(ss != se) {
-            pending[left(si)] += pending[si];
-            pending[right(si)] += pending[si];
+            lazy[left(si)] += lazy[si];
+            lazy[right(si)] += lazy[si];
         }
 
-        pending[si] = 0;
+        lazy[si] = 0;
     }
 
     void build(int ss, int se, int si) {
@@ -71,8 +77,8 @@ public:
     }
 
     T query(int qs, int qe, int ss, int se, int si) {
-        // perform any pending updates
-        doPendingUpdates(ss, se, si);
+        // push the updates to the left and right subtrees
+        push(ss, se, si);
 
         // if we are completely outside query range
         if(se < qs or ss > qe) return invalidValue;
@@ -90,16 +96,16 @@ public:
     }
 
     void update(int qs, int qe, T val, int ss, int se, int si) {
-        // perform any pending updates
-        doPendingUpdates(ss, se, si);
+        // push the updates to the left and right subtrees
+        push(ss, se, si);
 
         // if we are completely outside query range
         if(se < qs or ss > qe) return;
 
         // if we are completely inside query range
         if(ss >= qs and se <= qe) {
-            pending[si] += val;
-            doPendingUpdates(ss, se, si);
+            lazy[si] += val;
+            push(ss, se, si);
             return;
         }
 
@@ -114,17 +120,23 @@ public:
     }
 
     SegmentTree(vector<T>& arr) {
-        this->n = arr.size();
-        this->arr = arr;
-        this->st = vector<T>(4*n);
-        this->pending = vector<T>(4*n, 0);
+        n = arr.size();
+        arr = arr;
+        st = vector<T>(4*n);
+        lazy = vector<T>(4*n, 0);
 
         // build the segment tree
         build(0, n-1, 0);
     }
 
     SegmentTree(int n) {
-        SegmentTree(vector<T>(n, 0));
+        this->n = n;
+        arr = vector<T>(n, 0);
+        st = vector<T>(4*n);
+        lazy = vector<T>(4*n, 0);
+
+        // build the segment tree
+        build(0, n-1, 0);
     }
 
     T query(int qs, int qe) {
