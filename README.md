@@ -29,8 +29,11 @@ This repository contains code for various data structures and algorithms.
         * [O(n^2) LIS](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/longest-increasing-subsequence/lis_n_squared.cpp)
         * [O(n*log(n)) LIS](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/longest-increasing-subsequence/lis_n_log_n.cpp)
     * Knapsack
-        * [0-1 Knapsack](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/knapsack/0_1_knapsack.cpp)
-        * [Unbounded Knapsack](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/knapsack/unbounded_knapsack.cpp)
+        * [Without repetition of items](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/knapsack/knapsack.cpp)
+        * [With repetition of items)](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/knapsack/unbounded_knapsack.cpp)
+    * Coin Change
+        * [Number of ways](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/coin-change/numberOfWays.cpp)
+        * [Minimum number of coins](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/coin-change/minCoins.cpp)
 * String Hashing
 	* [Polynomial Rolling Hash](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/string-hashing/polynomial-rolling-hash/PolyRollingHash.py)
 * Geometry

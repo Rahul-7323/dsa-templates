@@ -1,3 +1,12 @@
+/*
+ * Given n items with their weights and values and a knapsack with a weight capacity of W, 
+ * find the maximum value that we can get by choosing a subset of items such that the sum of weights
+ * of the chosen subset of items is less than or equal to W. Repetition of items is not allowed.
+ *
+ * Time Complexity = O(n * W)
+ * Space Complexity = O(n * W)
+ *
+ */
 
 // top-down
 int knapsack(vector<int>& weight, vector<int>& price, int W) {
