@@ -6,7 +6,7 @@
  * Tarjans algorithm can be used for finding the brige edges in a graph in linear time.
  *
  * Time Complexity = O(V + E)
- * Space Complexity = O(V) [auxiliary space]
+ * Space Complexity = O(V)
  * where V is the number of vertices or nodes and E is the number of edges.
  *
  */
