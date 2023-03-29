@@ -37,6 +37,7 @@ This repository contains code for various data structures and algorithms.
     * Coin Change
         * [Number of ways](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/coin-change/numberOfWays.cpp)
         * [Minimum number of coins](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/coin-change/minCoins.cpp)
+    * [Edit Distance](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/edit-distance/editDistance.cpp)
 * String Hashing
 	* [Polynomial Rolling Hash](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/string-hashing/polynomial-rolling-hash/PolyRollingHash.py)
 * Geometry
@@ -69,11 +70,7 @@ This repository contains code for various data structures and algorithms.
 
 ### ToDo
 
-- [ ] Dijkstras Algorithm
 - [ ] String Hashing algorithms like rolling hash, finding hash of any substring, etc
 - [ ] String matching algorithms like KMP, Z algorithm, etc
-- [ ] Fenwick Tree
-- [ ] Sparse Table
-- [ ] Segment Tree with lazy propagation
 - [ ] Aho-Corasick Algorithm, basically kmp on tries
 - [ ] Strongly Connected Components, Kosarajus algorithm and Tarjans algorithm
