@@ -13,20 +13,22 @@
  *
  */
 
-template <typename T=int>
+template <class T=int, class F=function<T(const T&, const T&)>>
 class SparseTable {
-
 public:
     vector<vector<T>> st;
+    F func;
 
     int log2_floor(int num) {
         return num ? __builtin_clz(1) - __builtin_clz(num) : -1;
     }
 
-    SparseTable(vector<T>& arr) {
+    SparseTable(vector<T>& arr, const F& func) {
         int n = arr.size();
         int k = log2_floor(n);
         st = vector<vector<T>>(k+1, vector<T>(n));
+        // provide the function as an argument to the constructor
+        this->func = func;
 
         // build the sparse table
         st[0] = arr;
@@ -34,15 +36,13 @@ public:
         // building in bottom-up manner using dynamic programming
         for(int i = 1; i <= k; i++) {
             for(int j = 0; j + (1 << i) <= n; j++) {
-                // range minimum query, change min to max for performing range maximum query
-                st[i][j] = min(st[i - 1][j], st[i - 1][j + (1 << (i - 1))]);
+                st[i][j] = func(st[i - 1][j], st[i - 1][j + (1 << (i - 1))]);
             }
         }
     }
 
     T query(int l, int r) {
         int i = log2_floor(r - l + 1);
-        // range minimum query, change min to max for performing range maximum query
-        return min(st[i][l], st[i][r - (1 << i) + 1]);
+        return func(st[i][l], st[i][r - (1 << i) + 1]);
     }
 };
