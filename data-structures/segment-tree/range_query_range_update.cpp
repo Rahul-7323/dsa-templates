@@ -121,7 +121,7 @@ public:
 
     SegmentTree(vector<T>& arr) {
         n = arr.size();
-        arr = arr;
+        this->arr = arr;
         st = vector<T>(4*n);
         lazy = vector<T>(4*n, 0);
 
