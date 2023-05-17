@@ -6,7 +6,7 @@ This repository contains code for various data structures and algorithms.
     * [Range Query, Point Update](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/segment-tree/range_query_point_update.cpp)
     * [Range Query, Range Update](https://github.com/Rahul-7323/cpp-dsa-templates/blob/main/data-structures/segment-tree/range_query_range_update.cpp)
 * Dynamic Segment Tree
-    * [Range Query, Range Update](https://githuh.com/Rahul-7323/dsa-templates/blob/main/data-structures/dynamic-segment-tree/range_query_range_update.cpp)
+    * [Range Query, Range Update](https://github.com/Rahul-7323/dsa-templates/blob/main/data-structures/dynamic-segment-tree/range_query_range_update.cpp)
 * Fenwick Tree
     * [Range Query, Point Update](https://github.com/Rahul-7323/dsa-templates/blob/main/data-structures/fenwick-tree/range_query_point_update.cpp)
 * [Sparse Table](https://github.com/Rahul-7323/dsa-templates/blob/main/data-structures/sparse-table/SparseTable.cpp)
