@@ -45,6 +45,7 @@ This repository contains code for various data structures and algorithms.
     * [Longest Common Subsequence](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/longest-common-subsequence/lcs.cpp)
     * [Edit Distance](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/edit-distance/editDistance.cpp)
     * [Longest Palindromic Substring](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/longest-palindromic-substring/lps.cpp)
+    * [Longest Palindromic Subsequence](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/longest-palindromic-subsequence/lps.cpp)
 * String Hashing
 	* [Polynomial Rolling Hash](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/string-hashing/polynomial-rolling-hash/PolyRollingHash.py)
 * Geometry
