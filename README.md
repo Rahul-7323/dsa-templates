@@ -29,6 +29,7 @@ This repository contains code for various data structures and algorithms.
 		* [Dijkstras Single Source Shortest Path](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/graph/shortest-path/dijkstras-single-source-shortest-path/dijkstras.cpp)
 * Tree
 	* [Binary Lifting](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/tree/binary-lifting/TreeAncestor.cpp)
+    * [Lowest Common Ancestor](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/tree/lowest-common-ancestor/LCA.cpp)
 * Dynamic Programming
 	* [Binomial Coefficient](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/dynamic-programming/binomial-coefficient/nCr.cpp)
     * Longest Increasing Subsequence
