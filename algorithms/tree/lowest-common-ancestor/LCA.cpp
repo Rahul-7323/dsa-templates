@@ -36,7 +36,7 @@ public:
 
     LCA() {}
 
-    /// Initialize the class with the adjacency list of the tree and the root node.
+    // Initialize the class with the adjacency list of the tree and the root node.
     void init(vector<vector<int>>& AList, int root=0) {
         n = AList.size();
         depth.resize(n);
@@ -49,7 +49,7 @@ public:
         build();
     }
 
-    /// Performs euler tour and computes the depth of each node.
+    // Performs euler tour and computes the depth of each node.
     void dfs(int u, int parent, vector<vector<int>>& AList) {
         first[u] = euler.size();
         euler.push_back(u);
@@ -62,7 +62,7 @@ public:
         }
     }
 
-    /// Builds the sparse table.
+    // Builds the sparse table.
     void build() {
         m = euler.size();
         k = __builtin_clz(1) - __builtin_clz(m);
@@ -81,7 +81,7 @@ public:
         }
     }
 
-    /// Range minimum query for the node with the least depth between the range l and r.
+    // Range minimum query for the node with the least depth between the range l and r.
     int query(int l, int r) {
         int len = r-l+1;
         int i = __builtin_clz(1) - __builtin_clz(len);
@@ -92,7 +92,7 @@ public:
         return depth[left] < depth[right] ? left : right;
     }
 
-    /// Lowest common ancestor of two nodes u and v.
+    // Lowest common ancestor of two nodes u and v.
     int lca(int u, int v) {
         assert(u>=0 and u<n and v>=0 and v<n);
         int left = first[u], right = first[v];
@@ -100,7 +100,7 @@ public:
         return query(left, right);
     }
 
-    /// Distance between two nodes u and v.
+    // Distance between two nodes u and v.
     int distance(int u, int v) {
         assert(u>=0 and u<n and v>=0 and v<n);
         return depth[u] + depth[v] - 2*depth[lca(u, v)];
