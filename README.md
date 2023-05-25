@@ -52,6 +52,7 @@ This repository contains code for various data structures and algorithms.
 	* Convex Hull
 		* [Graham Scan](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/geometry/convex-hull/graham-scan/grahamScan.cpp)
 * Math
+    * [Big Integer](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/big-integer/BigInteger.cpp)
     * [Binary Exponentiation](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/binary-exponentiation/binpow.cpp)
     * [Modular Exponentiation](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/modular-exponentiation/modpow.cpp)
     * [Kth Permutation Sequence](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/kth-permutation-sequence-of-first-n-natural-numbers/getPermutation.cpp)
