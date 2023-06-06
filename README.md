@@ -60,6 +60,9 @@ This repository contains code for various data structures and algorithms.
     * Prime Numbers
         * [Sieve of Eratosthenes](https://github.com/Rahul-7323/dsa-templates/blob/main/algorithms/math/prime-numbers/sieve-of-eratosthenes/sieveOfEratosthenes.cpp)
 
+## Utils
+* [Math Utils](https://github.com/Rahul-7323/dsa-templates/blob/main/utils/math-utils/MathUtils.cpp)
+
 ## STL
 * [Indexed Set](https://github.com/Rahul-7323/dsa-templates/blob/main/stl/indexed-set/indexed_set.cpp)
 
