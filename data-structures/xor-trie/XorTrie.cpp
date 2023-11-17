@@ -7,55 +7,62 @@
  *
  * */
 
-class XorTrie {
+class XOR_Trie {
+public:
     struct TrieNode {
-        int num;
-        vector<TrieNode*> children;
-
-        TrieNode() {
-            this->num = -1;
-            this->children = vector<TrieNode*>(2, NULL);
-        }
+        TrieNode* children[2] = {NULL};
+        int count = 0;
     };
 
-    TrieNode* root;
+    int n;
+    TrieNode* root = new TrieNode();
 
-    public:
-
-    XorTrie() {
-        this->root = new TrieNode();
+    XOR_Trie(int n) {
+        this->n = n;
     }
 
     void insert(int num) {
         TrieNode* curr = root;
 
-        for(int i=30; i>=0; i--) {
-            int currBit = (num>>i & 1);
+        for(int i=n-1; i>=0; i--) {
+            int bit = ((num>>i) & 1);
 
-            if(not curr->children[currBit]) {
-                curr->children[currBit] = new TrieNode();
+            if(not curr->children[bit]) {
+                curr->children[bit] = new TrieNode();
             }
 
-            curr = curr->children[currBit];
+            curr = curr->children[bit];
+            curr->count++;
         }
-
-        curr->num = num;
     }
 
-    int match(int num) {
+    void remove(int num) {
         TrieNode* curr = root;
 
-        for(int i=30; i>=0; i--) {
-            int currBit = (num>>i & 1);
+        for(int i=n-1; i>=0; i--) {
+            int bit = ((num>>i) & 1);
 
-            if(curr->children[currBit ^ 1]) {
-                curr = curr->children[currBit ^ 1];
+            curr = curr->children[bit];
+            curr->count--;
+        }
+    }
+
+    int max_xor(int num) {
+        TrieNode* curr = root;
+        int val = 0;
+
+        for(int i=n-1; i>=0; i--) {
+            int bit = ((num>>i) & 1);
+
+            if(curr->children[bit ^ 1] and curr->children[bit ^ 1]->count > 0) {
+                val |= (1<<i);
+                curr = curr->children[bit ^ 1];
             }
             else {
-                curr = curr->children[currBit];
+                curr = curr->children[bit];
             }
         }
 
-        return curr->num;
+        return val;
     }
 };
